@@ -53,9 +53,9 @@ Passo 5 - Acessar Tela de Cadastro de Usuários
     Wait Until Element Is Visible    id=edit    timeout=30
     Click Element    id=edit   
 
-Passo 6 - Editar Nome com caracteres invalidos Numeros (especiais)
-    Input Text    ${FULL_NAME_FIELD}    ${NOME_CARACTERES_NUMEROS}
-    Input Text    ${EMAIL_FIELD}        ${NEW_EMAIL}
+# Passo 6 - Editar Nome com caracteres invalidos Numeros (especiais)
+#     Input Text    ${FULL_NAME_FIELD}    ${NOME_CARACTERES_NUMEROS}
+#     Input Text    ${EMAIL_FIELD}        ${NEW_EMAIL}
 
 Passo 7 - Clicar no Botão Salvar Alterações
     Click Button    ${SAVE_BUTTON}

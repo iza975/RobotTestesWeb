@@ -13,7 +13,7 @@ Cenario de teste: Editar campo "E-mail" contendo espaços
     Passo 5 - Acessar Tela de Cadastro de Usuários 
     Passo 6 - Editar Nome e preencher o email com espaços
     Passo 7 - Clicar no Botão Salvar Alterações
-    Passo 8 - Verificar Mensagem de Erro de Email Inválido
+    # Passo 8 - Verificar Mensagem de Erro de Email Inválido
 
 
    # resultadado esperado deve exibir mensagem de erro

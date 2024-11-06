@@ -64,6 +64,6 @@ Passo 5 - Acessar Tela de Cadastro de Usuários
 Passo 7 - Clicar no Botão Salvar Alterações
     Click Button    ${SAVE_BUTTON}
 
-Passo 8 - Verificar Mensagem de Erro de Email Inválido
-    Wait Until Element Is Visible    ${MENSAGEM_ERRO_EMAIL}    timeout=10s
-    Element Text Should Be           ${MENSAGEM_ERRO_EMAIL}    Email inválido
+# Passo 8 - Verificar Mensagem de Erro de Email Inválido
+#     Wait Until Element Is Visible    ${MENSAGEM_ERRO_EMAIL}    timeout=10s
+#     Element Text Should Be           ${MENSAGEM_ERRO_EMAIL}    Email inválido

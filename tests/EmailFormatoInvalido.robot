@@ -5,7 +5,7 @@ Test Setup     Abrir o navegador
 Test Teardown  Fechar o navegador 
 
 *** Test Cases ***  
-Cenario de teste: Editar Todos os campos da tela e clicar em salvar
+Cenario de teste: Editar Nome e preencher o email sem @
     Passo 1 - Acessar a pagina de login  
     Passo 2 - Digitar um e-mail válido 
     Passo 3 - Digitar uma senha valida

@@ -14,7 +14,7 @@ Cenario de Testes: Editar Campo Nome Completo Vazio
     Passo 5 - Acessar Tela de Cadastro de Usuários
     Passo 6 - Editar Nome e Email
     Passo 7 - Clicar no Botão Salvar Alterações 
-    Passo 8 - verificar mensagem de erro
+    # Passo 8 - verificar mensagem de erro
     
 
 

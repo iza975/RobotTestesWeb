@@ -44,14 +44,14 @@ Passo 4 - clicar no botao entrar
     Click Button                     locator=${botaoInput}    
     Sleep    10
 Passo 5 - Acessar Tela de Cadastro de Usuários
-    Wait Until Element Is Visible    ${CADASTROS_BUTTON}    timeout= 60
+    Wait Until Element Is Visible    ${CADASTROS_BUTTON}    timeout=60
     Click Element    ${CADASTROS_BUTTON}
     Click Element    ${USUARIOS_BUTTON}
      Wait Until Element Is Visible    id=edit    timeout=30
      Click Element    id=edit
    
 
-Passo 6 - Editar Nome e Email
+Passo 6 - Editar Nome e Email Válidos
     Input Text    ${FULL_NAME_FIELD}    ${NEW_FULL_NAME}
     Input Text    ${EMAIL_FIELD}        ${NEW_EMAIL}
 
