@@ -1,465 +1,2078 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1 (Python 3.12.6 on win32)" generated="2024-11-10T20:03:52.122050" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1 (Python 3.12.6 on win32)" generated="2024-11-14T14:37:19.447757" rpa="false" schemaversion="5">
 <suite id="s1" name="RobotTestesWeb" source="C:\Users\Iza Wicki\OneDrive\Documentos\RobotTestesWeb">
 <suite id="s1-s1" name="Tests" source="C:\Users\Iza Wicki\OneDrive\Documentos\RobotTestesWeb\tests">
-<suite id="s1-s1-s1" name="DeixarCamposVaziosCancelar" source="C:\Users\Iza Wicki\OneDrive\Documentos\RobotTestesWeb\tests\DeixarCamposVaziosCancelar.robot">
-<test id="s1-s1-s1-t1" name="Cenario de teste: Editar cadastro não preenchendo nenhum dos campos e clicar no botão &quot;Cancelar&quot;" line="7">
+<suite id="s1-s1-s1" name="Cadastro Usuario" source="C:\Users\Iza Wicki\OneDrive\Documentos\RobotTestesWeb\tests\cadastro_usuario">
+<suite id="s1-s1-s1-s1" name="DeixarCamposVaziosCancelar" source="C:\Users\Iza Wicki\OneDrive\Documentos\RobotTestesWeb\tests\cadastro_usuario\DeixarCamposVaziosCancelar.robot">
+<test id="s1-s1-s1-s1-t1" name="Cenario de teste: Editar cadastro não preenchendo nenhum dos campos e clicar no botão &quot;Cancelar&quot;" line="7">
 <kw name="Abrir o navegador" owner="DeixarCamposVaziosCancelar" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-11-10T20:03:53.609448" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-11-14T14:37:19.967190" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-11-14T14:37:21.956695" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-11-10T20:03:53.609448" elapsed="6.827130"/>
+<status status="PASS" start="2024-11-14T14:37:19.967190" elapsed="4.856215"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-11-10T20:04:00.438027" elapsed="0.167145"/>
+<status status="PASS" start="2024-11-14T14:37:24.824404" elapsed="0.134465"/>
 </kw>
-<status status="PASS" start="2024-11-10T20:03:53.607458" elapsed="6.997714"/>
+<status status="PASS" start="2024-11-14T14:37:19.967190" elapsed="4.991679"/>
 </kw>
 <kw name="Passo 1 - Acessar a pagina de login" owner="DeixarCamposVaziosCancelar">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-11-10T20:04:00.609167" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-11-14T14:37:24.961864" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-11-14T14:37:26.872656" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-11-10T20:04:00.608169" elapsed="9.487937"/>
+<status status="PASS" start="2024-11-14T14:37:24.960869" elapsed="4.887085"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-11-10T20:04:10.097107" elapsed="0.153480"/>
+<status status="PASS" start="2024-11-14T14:37:29.847954" elapsed="0.313911"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-11-10T20:04:10.252588" level="INFO">Opening url 'https://automacao.qacoders.dev.br/login'</msg>
+<msg time="2024-11-14T14:37:30.161865" level="INFO">Opening url 'https://automacao.qacoders.dev.br/'</msg>
 <arg>url=${urlBase}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-11-10T20:04:10.251594" elapsed="4.473312"/>
+<status status="PASS" start="2024-11-14T14:37:30.161865" elapsed="1.586956"/>
 </kw>
-<status status="PASS" start="2024-11-10T20:04:00.607166" elapsed="14.117740"/>
+<status status="PASS" start="2024-11-14T14:37:24.959867" elapsed="6.788954"/>
 </kw>
 <kw name="Passo 2 - Digitar um e-mail válido" owner="DeixarCamposVaziosCancelar">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>locator=${emailInput}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-11-10T20:04:14.752893" elapsed="0.263971"/>
+<status status="PASS" start="2024-11-14T14:37:31.755797" elapsed="0.376143"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-11-10T20:04:15.018859" level="INFO">Typing text 'sysadmin@qacoders.com' into text field 'id=email'.</msg>
+<msg time="2024-11-14T14:37:32.147561" level="INFO">Typing text 'sysadmin@qacoders.com' into text field 'id=email'.</msg>
 <arg>locator=${emailInput}</arg>
 <arg>text=${emailValido}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-10T20:04:15.017863" elapsed="2.019358"/>
+<status status="PASS" start="2024-11-14T14:37:32.131940" elapsed="0.398872"/>
 </kw>
-<status status="PASS" start="2024-11-10T20:04:14.752893" elapsed="2.284328"/>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-14T14:37:33.531257" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-14T14:37:32.531019" elapsed="1.000238"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:37:31.754800" elapsed="1.776457"/>
 </kw>
 <kw name="Passo 3 - Digitar uma senha valida" owner="DeixarCamposVaziosCancelar">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>locator=${senhaInput}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-11-10T20:04:17.091247" elapsed="0.346191"/>
+<status status="PASS" start="2024-11-14T14:37:33.531257" elapsed="0.278703"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2024-11-10T20:04:17.438435" level="INFO">Typing password into text field 'id=password'.</msg>
-<msg time="2024-11-10T20:04:17.549233" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2024-11-14T14:37:33.809960" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2024-11-14T14:37:34.401618" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>locator=${senhaInput}</arg>
 <arg>password=${senhaValida}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-10T20:04:17.437438" elapsed="2.564661"/>
+<status status="PASS" start="2024-11-14T14:37:33.809960" elapsed="1.483837"/>
 </kw>
-<status status="PASS" start="2024-11-10T20:04:17.090247" elapsed="2.911852"/>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-14T14:37:36.294339" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-14T14:37:35.293797" elapsed="1.000542"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:37:33.531257" elapsed="2.763082"/>
 </kw>
 <kw name="Passo 4 - clicar no botao entrar" owner="DeixarCamposVaziosCancelar">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>locator=${botaoInput}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-11-10T20:04:20.054557" elapsed="0.396042"/>
+<status status="PASS" start="2024-11-14T14:37:36.341208" elapsed="0.734979"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-11-10T20:04:20.451597" level="INFO">Clicking button 'id=login'.</msg>
+<msg time="2024-11-14T14:37:37.076187" level="INFO">Clicking button 'id=login'.</msg>
 <arg>locator=${botaoInput}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-10T20:04:20.451597" elapsed="1.716352"/>
-</kw>
-<status status="PASS" start="2024-11-10T20:04:20.053561" elapsed="2.114388"/>
-</kw>
-<kw name="Passo 5 - Acessar Tela de Cadastro de Usuários" owner="DeixarCamposVaziosCancelar">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-11-10T20:04:22.235768" level="INFO">Clicking element '//*[@id="Cadastros"]/span'.</msg>
-<msg time="2024-11-10T20:04:23.101500" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-11-10T20:04:23.101500" level="FAIL">Element with locator '//*[@id="Cadastros"]/span' not found.</msg>
-<arg>${CADASTROS_BUTTON}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2024-11-10T20:04:22.234772" elapsed="0.877806">Element with locator '//*[@id="Cadastros"]/span' not found.</status>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>${USUARIOS_BUTTON}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-11-10T20:04:23.112578" elapsed="0.000000"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>id=edit</arg>
-<arg>timeout=5</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" start="2024-11-10T20:04:23.113573" elapsed="0.001000"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>id=edit</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-11-10T20:04:23.115574" elapsed="0.000000"/>
-</kw>
-<status status="FAIL" start="2024-11-10T20:04:22.226798" elapsed="0.889769">Element with locator '//*[@id="Cadastros"]/span' not found.</status>
-</kw>
-<kw name="Passo 6 - Nao preencher Nome Completo e E-mail Vazios" owner="DeixarCamposVaziosCancelar">
-<status status="NOT RUN" start="2024-11-10T20:04:23.164857" elapsed="0.000681"/>
-</kw>
-<kw name="Passo 7 - Clicar no Botão" owner="DeixarCamposVaziosCancelar">
-<status status="NOT RUN" start="2024-11-10T20:04:23.300545" elapsed="0.000000"/>
-</kw>
-<kw name="Fechar o navegador" owner="DeixarCamposVaziosCancelar" type="TEARDOWN">
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-11-10T20:04:23.425584" elapsed="20.376234"/>
-</kw>
-<status status="PASS" start="2024-11-10T20:04:23.422548" elapsed="20.379270"/>
-</kw>
-<status status="FAIL" start="2024-11-10T20:03:53.605467" elapsed="50.445184">Element with locator '//*[@id="Cadastros"]/span' not found.</status>
-</test>
-<status status="FAIL" start="2024-11-10T20:03:52.306674" elapsed="52.552567"/>
-</suite>
-<suite id="s1-s1-s2" name="EditarCadastroUser" source="C:\Users\Iza Wicki\OneDrive\Documentos\RobotTestesWeb\tests\EditarCadastroUser.robot">
-<test id="s1-s1-s2-t1" name="Cenario de teste: Editar Nome E Email Válidos" line="7">
-<kw name="Abrir o navegador" owner="EditarCadastroUser" type="SETUP">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-11-10T20:04:45.638818" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<arg>browser=chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-11-10T20:04:45.582910" elapsed="9.817696"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-11-10T20:04:55.401614" elapsed="0.307956"/>
-</kw>
-<status status="PASS" start="2024-11-10T20:04:45.581915" elapsed="10.127655"/>
-</kw>
-<kw name="Passo 1 - Acessar a pagina de login" owner="EditarCadastroUser">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-11-10T20:04:55.772561" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<arg>browser=chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-11-10T20:04:55.772561" elapsed="13.751351"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-11-10T20:05:09.525904" elapsed="0.345100"/>
-</kw>
-<kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-11-10T20:05:09.872002" level="INFO">Opening url 'https://automacao.qacoders.dev.br/login'</msg>
-<arg>url=${urlBase}</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-11-10T20:05:09.871004" elapsed="12.656089"/>
-</kw>
-<status status="PASS" start="2024-11-10T20:04:55.771566" elapsed="26.756520"/>
-</kw>
-<kw name="Passo 2 - Digitar um e-mail válido" owner="EditarCadastroUser">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>locator=${emailInput}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-11-10T20:05:22.601891" elapsed="1.113487"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-11-10T20:05:23.717372" level="INFO">Typing text 'sysadmin@qacoders.com' into text field 'id=email'.</msg>
-<arg>locator=${emailInput}</arg>
-<arg>text=${emailValido}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-10T20:05:23.716375" elapsed="6.257121"/>
-</kw>
-<status status="PASS" start="2024-11-10T20:05:22.600903" elapsed="7.373591"/>
-</kw>
-<kw name="Passo 3 - Digitar uma senha valida" owner="EditarCadastroUser">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>locator=${senhaInput}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-11-10T20:05:30.023482" elapsed="0.861979"/>
-</kw>
-<kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2024-11-10T20:05:30.887455" level="INFO">Typing password into text field 'id=password'.</msg>
-<msg time="2024-11-10T20:05:31.967432" level="INFO">Temporally setting log level to: NONE</msg>
-<arg>locator=${senhaInput}</arg>
-<arg>password=${senhaValida}</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-10T20:05:30.886457" elapsed="1.543968"/>
-</kw>
-<status status="PASS" start="2024-11-10T20:05:30.021967" elapsed="2.408458"/>
-</kw>
-<kw name="Passo 4 - clicar no botao entrar" owner="EditarCadastroUser">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>locator=${botaoInput}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-11-10T20:05:32.466491" elapsed="0.256975"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-11-10T20:05:32.726466" level="INFO">Clicking button 'id=login'.</msg>
-<arg>locator=${botaoInput}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-10T20:05:32.724464" elapsed="0.347504"/>
+<status status="PASS" start="2024-11-14T14:37:37.076187" elapsed="2.825731"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-11-10T20:05:43.079081" level="INFO">Slept 10 seconds.</msg>
-<arg>10</arg>
+<msg time="2024-11-14T14:37:40.903875" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-11-10T20:05:33.071968" elapsed="10.007113"/>
+<status status="PASS" start="2024-11-14T14:37:39.902913" elapsed="1.000962"/>
 </kw>
-<status status="PASS" start="2024-11-10T20:05:32.456447" elapsed="10.622634"/>
+<status status="PASS" start="2024-11-14T14:37:36.341208" elapsed="4.562667"/>
 </kw>
-<kw name="Passo 5 - Acessar Tela de Cadastro de Usuários" owner="EditarCadastroUser">
+<kw name="Passo 5 - Acessar Tela de Cadastro de Usuários" owner="DeixarCamposVaziosCancelar">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2024-11-10T20:05:45.385401" level="INFO">Suppressing StaleElementReferenceException from Selenium.</msg>
-<arg>${CADASTROS_BUTTON}</arg>
-<arg>timeout=60</arg>
+<arg>locator=${CADASTROS_BUTTON}</arg>
+<arg>timeout= 5</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-11-10T20:05:43.143923" elapsed="2.888403"/>
+<status status="PASS" start="2024-11-14T14:37:40.935124" elapsed="0.336094"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-11-10T20:05:46.034327" level="INFO">Clicking element '//*[@id="Cadastros"]/span'.</msg>
-<arg>${CADASTROS_BUTTON}</arg>
+<msg time="2024-11-14T14:37:41.271218" level="INFO">Clicking element '//*[@id="Cadastros"]/span'.</msg>
+<arg>locator=${CADASTROS_BUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-10T20:05:46.033324" elapsed="2.294893"/>
+<status status="PASS" start="2024-11-14T14:37:41.271218" elapsed="0.376905"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-11-10T20:05:48.329211" level="INFO">Clicking element '//*[@id="Usuários"]/span'.</msg>
-<arg>${USUARIOS_BUTTON}</arg>
+<msg time="2024-11-14T14:37:41.659816" level="INFO">Clicking element '//*[@id="Usuários"]/span'.</msg>
+<arg>locator=${USUARIOS_BUTTON}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-10T20:05:48.329211" elapsed="2.070975"/>
+<status status="PASS" start="2024-11-14T14:37:41.659816" elapsed="0.261749"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>id=edit</arg>
 <arg>timeout=30</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-11-10T20:05:50.401173" elapsed="1.602307"/>
+<status status="PASS" start="2024-11-14T14:37:41.921565" elapsed="0.609303"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-11-10T20:05:52.004476" level="INFO">Clicking element 'id=edit'.</msg>
+<msg time="2024-11-14T14:37:42.530868" level="INFO">Clicking element 'id=edit'.</msg>
 <arg>id=edit</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-10T20:05:52.004476" elapsed="1.578017"/>
+<status status="PASS" start="2024-11-14T14:37:42.530868" elapsed="0.198013"/>
 </kw>
-<status status="PASS" start="2024-11-10T20:05:43.135930" elapsed="10.447561"/>
+<status status="PASS" start="2024-11-14T14:37:40.935124" elapsed="2.058591"/>
 </kw>
-<kw name="Passo 6 - Editar Nome e Email Válidos" owner="EditarCadastroUser">
+<kw name="Passo 6 - Nao preencher Nome Completo e E-mail Vazios" owner="DeixarCamposVaziosCancelar">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-11-10T20:05:53.604475" level="INFO">Typing text 'Nome Completo Cadastrado' into text field 'id=fullName'.</msg>
+<msg time="2024-11-14T14:37:42.999929" level="INFO">Typing text '' into text field 'id=fullName'.</msg>
+<arg>${FULL_NAME_FIELD}</arg>
+<arg>${EMPTY}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:37:42.997935" elapsed="0.297118"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:37:43.295053" level="INFO">Typing text '' into text field 'id=mail'.</msg>
+<arg>${EMAIL_FIELD}</arg>
+<arg>${EMPTY}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:37:43.295053" elapsed="0.231487"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:37:42.997935" elapsed="0.528605"/>
+</kw>
+<kw name="Passo 7 - Clicar no Botão Cancelar" owner="DeixarCamposVaziosCancelar">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:37:43.544678" level="INFO">Clicking button 'id=cancel'.</msg>
+<arg>locator=${BOTAO_CANCELAR}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:37:43.544678" elapsed="0.270229"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:37:43.544678" elapsed="0.270229"/>
+</kw>
+<kw name="Fechar o navegador" owner="DeixarCamposVaziosCancelar" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-14T14:37:43.818898" elapsed="11.464690"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:37:43.817897" elapsed="11.465691"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:37:19.967190" elapsed="35.316398"/>
+</test>
+<status status="PASS" start="2024-11-14T14:37:19.510518" elapsed="35.773070"/>
+</suite>
+<suite id="s1-s1-s1-s2" name="EditarCadastroUser copy" source="C:\Users\Iza Wicki\OneDrive\Documentos\RobotTestesWeb\tests\cadastro_usuario\EditarCadastroUser copy.robot">
+<test id="s1-s1-s1-s2-t1" name="Cenario de teste: Editar Nome E Email Válidos" line="7">
+<kw name="Abrir o navegador" owner="EditarCadastroUser copy" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:37:55.310839" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-11-14T14:37:56.543290" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-14T14:37:55.310839" elapsed="3.792279"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-14T14:37:59.104116" elapsed="0.198252"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:37:55.310839" elapsed="3.998207"/>
+</kw>
+<kw name="Passo 1 - Acessar a pagina de login" owner="EditarCadastroUser copy">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:37:59.315032" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-11-14T14:38:01.643607" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-14T14:37:59.314033" elapsed="5.012842"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-14T14:38:04.326875" elapsed="0.155738"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:38:04.483608" level="INFO">Opening url 'https://automacao.qacoders.dev.br/'</msg>
+<arg>url=${urlBase}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-11-14T14:38:04.482613" elapsed="0.677416"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:37:59.313035" elapsed="5.846994"/>
+</kw>
+<kw name="Passo 2 - Digitar um e-mail válido" owner="EditarCadastroUser copy">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${emailInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:38:05.160029" elapsed="0.392706"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:38:05.552735" level="INFO">Typing text 'sysadmin@qacoders.com' into text field 'id=email'.</msg>
+<arg>locator=${emailInput}</arg>
+<arg>text=${emailValido}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:38:05.552735" elapsed="0.838738"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:38:05.160029" elapsed="1.231444"/>
+</kw>
+<kw name="Passo 3 - Digitar uma senha valida" owner="EditarCadastroUser copy">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${senhaInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:38:06.392502" elapsed="0.107139"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:38:06.499641" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2024-11-14T14:38:06.687105" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>locator=${senhaInput}</arg>
+<arg>password=${senhaValida}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:38:06.499641" elapsed="0.411945"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:38:06.392502" elapsed="0.519084"/>
+</kw>
+<kw name="Passo 4 - clicar no botao entrar" owner="EditarCadastroUser copy">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${botaoInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:38:06.911586" elapsed="0.125649"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:38:07.038232" level="INFO">Clicking button 'id=login'.</msg>
+<arg>locator=${botaoInput}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:38:07.037235" elapsed="0.437957"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-14T14:38:17.478035" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-14T14:38:07.475192" elapsed="10.002843"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:38:06.911586" elapsed="10.566449"/>
+</kw>
+<kw name="Passo 5 - Acessar Tela de Cadastro de Usuários" owner="EditarCadastroUser copy">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CADASTROS_BUTTON}</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:38:17.509284" elapsed="0.164061"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:38:17.673345" level="INFO">Clicking element '//*[@id="Cadastros"]/span'.</msg>
+<arg>${CADASTROS_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:38:17.673345" elapsed="0.254034"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:38:17.927379" level="INFO">Clicking element '//*[@id="Usuários"]/span'.</msg>
+<arg>${USUARIOS_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:38:17.927379" elapsed="0.422111"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=edit</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:38:18.350490" elapsed="0.373686"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:38:18.724176" level="INFO">Clicking element 'id=edit'.</msg>
+<arg>id=edit</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:38:18.724176" elapsed="0.250493"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:38:17.493661" elapsed="1.496636"/>
+</kw>
+<kw name="Passo 6 - Editar Nome e Email Válidos" owner="EditarCadastroUser copy">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:38:18.990297" level="INFO">Typing text 'Nome Completo Cadastrado' into text field 'id=fullName'.</msg>
 <arg>${FULL_NAME_FIELD}</arg>
 <arg>${NEW_FULL_NAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-10T20:05:53.603481" elapsed="1.152116"/>
+<status status="PASS" start="2024-11-14T14:38:18.990297" elapsed="0.755371"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-11-10T20:05:54.757593" level="INFO">Typing text 'sysadmintestetdshvsvsd' into text field 'id=mail'.</msg>
+<msg time="2024-11-14T14:38:19.745668" level="INFO">Typing text 'sysadmintestetdshvsvsd' into text field 'id=mail'.</msg>
 <arg>${EMAIL_FIELD}</arg>
 <arg>${NEW_EMAIL}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-10T20:05:54.756594" elapsed="0.788907"/>
+<status status="PASS" start="2024-11-14T14:38:19.745668" elapsed="1.049632"/>
 </kw>
-<status status="PASS" start="2024-11-10T20:05:53.601969" elapsed="1.944523"/>
+<status status="PASS" start="2024-11-14T14:38:18.990297" elapsed="1.806001"/>
 </kw>
-<kw name="Passo 7 - Clicar no Botão Salvar Alterações" owner="EditarCadastroUser">
+<kw name="Passo 7 - Clicar no Botão Salvar Alterações" owner="EditarCadastroUser copy">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-11-10T20:05:55.549484" level="INFO">Clicking button 'id=save'.</msg>
+<msg time="2024-11-14T14:38:20.840263" level="INFO">Clicking button 'id=save'.</msg>
 <arg>${SAVE_BUTTON}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-10T20:05:55.548487" elapsed="0.356957"/>
+<status status="PASS" start="2024-11-14T14:38:20.840263" elapsed="1.891425"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-11-10T20:06:00.908578" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-11-10T20:05:55.907436" elapsed="5.001142"/>
+<status status="PASS" start="2024-11-14T14:38:20.840263" elapsed="1.891425"/>
 </kw>
-<status status="PASS" start="2024-11-10T20:05:55.547489" elapsed="5.361089"/>
-</kw>
-<kw name="Fechar o navegador" owner="EditarCadastroUser" type="TEARDOWN">
+<kw name="Fechar o navegador" owner="EditarCadastroUser copy" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-11-10T20:06:00.921542" elapsed="3.888737"/>
+<status status="PASS" start="2024-11-14T14:38:22.791847" elapsed="6.622508"/>
 </kw>
-<status status="PASS" start="2024-11-10T20:06:00.920545" elapsed="3.889734"/>
+<status status="PASS" start="2024-11-14T14:38:22.791847" elapsed="6.622508"/>
 </kw>
-<status status="PASS" start="2024-11-10T20:04:45.499847" elapsed="79.315416"/>
+<status status="PASS" start="2024-11-14T14:37:55.310839" elapsed="34.103516"/>
 </test>
-<status status="PASS" start="2024-11-10T20:04:45.353021" elapsed="79.464238"/>
+<status status="PASS" start="2024-11-14T14:37:55.283588" elapsed="34.130767"/>
 </suite>
-<suite id="s1-s1-s3" name="EditarNomeCaractersNumeros" source="C:\Users\Iza Wicki\OneDrive\Documentos\RobotTestesWeb\tests\EditarNomeCaractersNumeros.robot">
-<test id="s1-s1-s3-t1" name="Cenario de Testes: Editar Nome com caracteres invalidos Numeros (especiais)" line="8">
-<kw name="Abrir o navegador" owner="EditarNomeCaracteresNumeros" type="SETUP">
+<status status="PASS" start="2024-11-14T14:37:19.510518" elapsed="69.903837"/>
+</suite>
+<suite id="s1-s1-s2" name="Email" source="C:\Users\Iza Wicki\OneDrive\Documentos\RobotTestesWeb\tests\email">
+<suite id="s1-s1-s2-s1" name="EmailComEspaços" source="C:\Users\Iza Wicki\OneDrive\Documentos\RobotTestesWeb\tests\email\EmailComEspaços.robot">
+<test id="s1-s1-s2-s1-t1" name="Cenario de teste: Editar campo &quot;E-mail&quot; contendo espaços" line="8">
+<kw name="Abrir o navegador" owner="EmailComEspaços" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-11-10T20:06:04.920067" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-11-14T14:38:29.458470" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-11-14T14:38:30.691694" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-11-10T20:06:04.920067" elapsed="10.135515"/>
+<status status="PASS" start="2024-11-14T14:38:29.458470" elapsed="3.973979"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-11-10T20:06:15.056580" elapsed="0.165570"/>
+<status status="PASS" start="2024-11-14T14:38:33.432449" elapsed="0.181941"/>
 </kw>
-<status status="PASS" start="2024-11-10T20:06:04.918071" elapsed="10.305079"/>
+<status status="PASS" start="2024-11-14T14:38:29.458470" elapsed="4.156919"/>
+</kw>
+<kw name="Passo 1 - Acessar a pagina de login" owner="EmailComEspaços">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:38:33.658240" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-11-14T14:38:36.161643" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-14T14:38:33.658240" elapsed="5.351690"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-14T14:38:39.009930" elapsed="0.131933"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:38:39.141863" level="INFO">Opening url 'https://automacao.qacoders.dev.br/'</msg>
+<arg>url=${urlBase}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-11-14T14:38:39.141863" elapsed="0.695585"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:38:33.658240" elapsed="6.180205"/>
+</kw>
+<kw name="Passo 2 - Digitar um e-mail válido" owner="EmailComEspaços">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${emailInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:38:39.839443" elapsed="0.544618"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:38:40.384061" level="INFO">Typing text 'sysadmin@qacoders.com' into text field 'id=email'.</msg>
+<arg>locator=${emailInput}</arg>
+<arg>text=${emailValido}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:38:40.384061" elapsed="0.544963"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-14T14:38:46.929275" level="INFO">Slept 6 seconds.</msg>
+<arg>6</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-14T14:38:40.929024" elapsed="6.000251"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:38:39.838445" elapsed="7.090830"/>
+</kw>
+<kw name="Passo 3 - Digitar uma senha valida" owner="EmailComEspaços">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${senhaInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:38:46.929275" elapsed="0.345527"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:38:47.274802" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2024-11-14T14:38:47.874016" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>locator=${senhaInput}</arg>
+<arg>password=${senhaValida}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:38:47.274802" elapsed="0.833921"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-14T14:38:53.109189" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-14T14:38:48.108723" elapsed="5.000466"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:38:46.929275" elapsed="6.179914"/>
+</kw>
+<kw name="Passo 4 - clicar no botao entrar" owner="EmailComEspaços">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${botaoInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:38:53.124817" elapsed="0.736753"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:38:53.861570" level="INFO">Clicking button 'id=login'.</msg>
+<arg>locator=${botaoInput}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:38:53.861570" elapsed="1.400264"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-14T14:39:00.262337" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-14T14:38:55.261834" elapsed="5.000503"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:38:53.109189" elapsed="7.153148"/>
+</kw>
+<kw name="Passo 5 - Acessar Tela de Cadastro de Usuários" owner="EmailComEspaços">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CADASTROS_BUTTON}</arg>
+<arg>timeout=60s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:39:00.262337" elapsed="0.044642"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:39:00.306979" level="INFO">Clicking element '//*[@id="Cadastros"]/span'.</msg>
+<arg>${CADASTROS_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:39:00.306979" elapsed="0.102914"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:39:00.409893" level="INFO">Clicking element '//*[@id="Usuários"]/span'.</msg>
+<arg>${USUARIOS_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:39:00.409893" elapsed="0.188289"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=edit</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:39:00.599179" elapsed="0.646194"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:39:01.245373" level="INFO">Clicking element 'id=edit'.</msg>
+<arg>id=edit</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:39:01.245373" elapsed="0.355487"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:39:00.262337" elapsed="1.338523"/>
+</kw>
+<kw name=" Passo 6 - Editar Nome e preencher o email com espaços" owner="EmailComEspaços">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:39:01.600860" level="INFO">Typing text 'Nome Completo Cadastrado' into text field 'id=fullName'.</msg>
+<arg>${FULL_NAME_FIELD}</arg>
+<arg>${NEW_FULL_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:39:01.600860" elapsed="0.461650"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:39:02.062510" level="INFO">Typing text 'teste email@example.com' into text field 'id=mail'.</msg>
+<arg>${EMAIL_FIELD}</arg>
+<arg>${EMAIL_COM_ESPACOS}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:39:02.062510" elapsed="0.594420"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:39:01.600860" elapsed="1.056070"/>
+</kw>
+<kw name="Passo 7 - Clicar no Botão Salvar Alterações" owner="EmailComEspaços">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:39:02.673832" level="INFO">Clicking button 'id=save'.</msg>
+<arg>${SAVE_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:39:02.673832" elapsed="0.254111"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:39:02.673832" elapsed="0.254111"/>
+</kw>
+<kw name="Passo 8 - Verificar Mensagem de Erro de Email Inválido" owner="EmailComEspaços">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${MENSAGEM_ERRO_EMAIL}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:39:02.927943" elapsed="0.085783"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:39:03.014726" level="INFO">Verifying element 'xpath=//p[@class='css-bbipig' and contains(text(), 'Email inválido')]' contains exact text 'Email inválido'.</msg>
+<arg>${MENSAGEM_ERRO_EMAIL}</arg>
+<arg>Email inválido</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-11-14T14:39:03.014726" elapsed="0.081011"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:39:02.927943" elapsed="0.167794"/>
+</kw>
+<kw name="Fechar o navegador" owner="EmailComEspaços" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-14T14:39:03.095737" elapsed="4.248543"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:39:03.095737" elapsed="4.248543"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:38:29.455689" elapsed="37.888591"/>
+</test>
+<status status="PASS" start="2024-11-14T14:38:29.430082" elapsed="37.914198"/>
+</suite>
+<suite id="s1-s1-s2-s2" name="EmailFomatoValidoBR" source="C:\Users\Iza Wicki\OneDrive\Documentos\RobotTestesWeb\tests\email\EmailFomatoValidoBR.robot">
+<test id="s1-s1-s2-s2-t1" name="Cenario de teste: Editar campo &quot;E-mail&quot; no formato valido: usuario@email.com.br" line="8">
+<kw name="Abrir o navegador" owner="EmailFormatoValidoBR" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:39:07.377366" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-11-14T14:39:08.673486" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-14T14:39:07.377366" elapsed="3.666017"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-14T14:39:11.044379" elapsed="0.223726"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:39:07.376368" elapsed="3.891737"/>
+</kw>
+<kw name="Passo 1 - Acessar a pagina de login" owner="EmailFormatoValidoBR">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:39:11.280074" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-11-14T14:39:13.267381" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-14T14:39:11.280074" elapsed="4.760422"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-14T14:39:16.040496" elapsed="0.072106"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:39:16.122103" level="INFO">Opening url 'https://automacao.qacoders.dev.br/'</msg>
+<arg>url=${urlBase}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-11-14T14:39:16.112602" elapsed="0.774380"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:39:11.279074" elapsed="5.608905"/>
+</kw>
+<kw name="Passo 2 - Digitar um e-mail válido" owner="EmailFormatoValidoBR">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${emailInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:39:16.895127" elapsed="0.457033"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:39:17.352160" level="INFO">Typing text 'sysadmin@qacoders.com' into text field 'id=email'.</msg>
+<arg>locator=${emailInput}</arg>
+<arg>text=${emailValido}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:39:17.352160" elapsed="0.802054"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:39:16.894129" elapsed="1.260085"/>
+</kw>
+<kw name="Passo 3 - Digitar uma senha valida" owner="EmailFormatoValidoBR">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${senhaInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:39:18.154214" elapsed="0.134179"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:39:18.304012" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2024-11-14T14:39:18.599108" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>locator=${senhaInput}</arg>
+<arg>password=${senhaValida}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:39:18.304012" elapsed="0.969595"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:39:18.154214" elapsed="1.119393"/>
+</kw>
+<kw name="Passo 4 - clicar no botao entrar" owner="EmailFormatoValidoBR">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${botaoInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:39:19.289228" elapsed="0.329515"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:39:19.618743" level="INFO">Clicking button 'id=login'.</msg>
+<arg>locator=${botaoInput}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:39:19.618743" elapsed="2.020311"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-14T14:39:26.640639" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-14T14:39:21.639054" elapsed="5.001585"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:39:19.289228" elapsed="7.351411"/>
+</kw>
+<kw name="Passo 5 - Acessar Tela de Cadastro de Usuários" owner="EmailFormatoValidoBR">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CADASTROS_BUTTON}</arg>
+<arg>timeout= 60s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:39:26.640639" elapsed="0.130575"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:39:26.771214" level="INFO">Clicking element '//*[@id="Cadastros"]/span'.</msg>
+<arg>${CADASTROS_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:39:26.771214" elapsed="0.286584"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:39:27.057798" level="INFO">Clicking element '//*[@id="Usuários"]/span'.</msg>
+<arg>${USUARIOS_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:39:27.057798" elapsed="0.273965"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=edit</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:39:27.332761" elapsed="0.438403"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:39:27.771164" level="INFO">Clicking element 'id=edit'.</msg>
+<arg>id=edit</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:39:27.771164" elapsed="0.172226"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:39:26.640639" elapsed="1.303749"/>
+</kw>
+<kw name="Passo 6 - Editar Nome e preencher o email com formato .com.br" owner="EmailFormatoValidoBR">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:39:27.951370" level="INFO">Typing text 'Nome Completo Cadastrado' into text field 'id=fullName'.</msg>
+<arg>${FULL_NAME_FIELD}</arg>
+<arg>${NEW_FULL_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:39:27.951370" elapsed="0.774205"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:39:28.738178" level="INFO">Typing text 'usuario@email.com.br' into text field 'id=mail'.</msg>
+<arg>${EMAIL_FIELD}</arg>
+<arg>${EMAIL_FORMATO_BR}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:39:28.725575" elapsed="0.466519"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:39:27.950372" elapsed="1.241722"/>
+</kw>
+<kw name="Passo 7 - Clicar no Botão Salvar Alterações" owner="EmailFormatoValidoBR">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:39:29.205306" level="INFO">Clicking button 'id=save'.</msg>
+<arg>${SAVE_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:39:29.205306" elapsed="0.336510"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:39:29.205306" elapsed="0.336510"/>
+</kw>
+<kw name="Fechar o navegador" owner="EmailFormatoValidoBR" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-14T14:39:29.541816" elapsed="11.923111"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:39:29.541816" elapsed="11.923111"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:39:07.374373" elapsed="34.090554"/>
+</test>
+<status status="PASS" start="2024-11-14T14:39:07.344280" elapsed="34.120647"/>
+</suite>
+<suite id="s1-s1-s2-s3" name="EmailFormatoInvalido" source="C:\Users\Iza Wicki\OneDrive\Documentos\RobotTestesWeb\tests\email\EmailFormatoInvalido.robot">
+<test id="s1-s1-s2-s3-t1" name="Cenario de teste: Editar Nome e preencher o email sem @" line="8">
+<kw name="Abrir o navegador" owner="EmailFormatoInvalido" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:39:41.495243" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-11-14T14:39:42.805020" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-14T14:39:41.495243" elapsed="3.513276"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-14T14:39:45.008519" elapsed="0.311410"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:39:41.495243" elapsed="3.824686"/>
+</kw>
+<kw name="Passo 1 - Acessar a pagina de login" owner="EmailFormatoInvalido">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:39:45.345261" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-11-14T14:39:47.511197" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-14T14:39:45.344264" elapsed="4.774114"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-14T14:39:50.119378" elapsed="0.202537"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:39:50.321915" level="INFO">Opening url 'https://automacao.qacoders.dev.br/'</msg>
+<arg>url=${urlBase}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-11-14T14:39:50.321915" elapsed="0.933388"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:39:45.343266" elapsed="5.912037"/>
+</kw>
+<kw name="Passo 2 - Digitar um e-mail válido" owner="EmailFormatoInvalido">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${emailInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:39:51.281993" elapsed="1.284602"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:39:52.566595" level="INFO">Typing text 'sysadmin@qacoders.com' into text field 'id=email'.</msg>
+<arg>locator=${emailInput}</arg>
+<arg>text=${emailValido}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:39:52.566595" elapsed="2.253663"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:39:51.280994" elapsed="3.539264"/>
+</kw>
+<kw name="Passo 3 - Digitar uma senha valida" owner="EmailFormatoInvalido">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${senhaInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:39:54.851501" elapsed="0.735960"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:39:55.587461" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2024-11-14T14:39:56.821825" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>locator=${senhaInput}</arg>
+<arg>password=${senhaValida}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:39:55.587461" elapsed="1.360083"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:39:54.851501" elapsed="2.096043"/>
+</kw>
+<kw name="Passo 4 - clicar no botao entrar" owner="EmailFormatoInvalido">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${botaoInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:39:56.970999" elapsed="0.597049"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:39:57.568048" level="INFO">Clicking button 'id=login'.</msg>
+<arg>locator=${botaoInput}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:39:57.568048" elapsed="2.098617"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-14T14:40:04.667949" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-14T14:39:59.667664" elapsed="5.000285"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:39:56.970999" elapsed="7.696950"/>
+</kw>
+<kw name="Passo 5 - Acessar Tela de Cadastro de Usuários" owner="EmailFormatoInvalido">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CADASTROS_BUTTON}</arg>
+<arg>timeout= 60s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:40:04.683577" elapsed="0.348913"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:40:05.032490" level="INFO">Clicking element '//*[@id="Cadastros"]/span'.</msg>
+<arg>${CADASTROS_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:40:05.032490" elapsed="2.105689"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:40:07.138179" level="INFO">Clicking element '//*[@id="Usuários"]/span'.</msg>
+<arg>${USUARIOS_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:40:07.138179" elapsed="1.292938"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=edit</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:40:08.431117" elapsed="1.103659"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:40:09.534776" level="INFO">Clicking element 'id=edit'.</msg>
+<arg>id=edit</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:40:09.534776" elapsed="0.305709"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:40:04.683577" elapsed="5.156908"/>
+</kw>
+<kw name="Passo 6 - Editar Nome e preencher o email sem @" owner="EmailFormatoInvalido">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:40:09.897782" level="INFO">Typing text 'Nome Completo Cadastrado' into text field 'id=fullName'.</msg>
+<arg>${FULL_NAME_FIELD}</arg>
+<arg>${NEW_FULL_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:40:09.897782" elapsed="2.992124"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:40:12.889906" level="INFO">Typing text 'sysadmintestetdshvsvsdvsdqacoders.com' into text field 'id=mail'.</msg>
+<arg>${EMAIL_FIELD}</arg>
+<arg>${EMAIL_FORMATO_INVALIDO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:40:12.889906" elapsed="0.339666"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:40:09.896785" elapsed="3.332787"/>
+</kw>
+<kw name="Passo 7 - Clicar no Botão Salvar Alterações" owner="EmailFormatoInvalido">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:40:13.236162" level="INFO">Clicking button 'id=save'.</msg>
+<arg>${SAVE_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:40:13.229572" elapsed="0.157553"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:40:13.229572" elapsed="0.157553"/>
+</kw>
+<kw name="Passo 8 - Verificar Mensagem de Erro de Email Inválido" owner="EmailFormatoInvalido">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${MENSAGEM_ERRO_EMAIL}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:40:13.387125" elapsed="0.078641"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:40:13.466764" level="INFO">Verifying element 'xpath=//p[@class='css-bbipig' and contains(text(), 'Email inválido')]' contains exact text 'Email inválido'.</msg>
+<arg>${MENSAGEM_ERRO_EMAIL}</arg>
+<arg>Email inválido</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-11-14T14:40:13.466764" elapsed="0.053139"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:40:13.387125" elapsed="0.132778"/>
+</kw>
+<kw name="Fechar o navegador" owner="EmailFormatoInvalido" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-14T14:40:13.519903" elapsed="2.671933"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:40:13.519903" elapsed="2.671933"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:39:41.493756" elapsed="34.698080"/>
+</test>
+<status status="PASS" start="2024-11-14T14:39:41.464927" elapsed="34.726909"/>
+</suite>
+<suite id="s1-s1-s2-s4" name="EmailFormatoValido" source="C:\Users\Iza Wicki\OneDrive\Documentos\RobotTestesWeb\tests\email\EmailFormatoValido.robot">
+<test id="s1-s1-s2-s4-t1" name="Cenario de teste: Editar campo &quot;E-mail&quot; no formato valido: usuario@email.com" line="9">
+<kw name="Abrir o navegador" owner="EmailFormatoValido" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:40:16.217019" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-11-14T14:40:17.336776" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-14T14:40:16.216368" elapsed="3.372501"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-14T14:40:19.588869" elapsed="0.191583"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:40:16.215370" elapsed="3.565082"/>
+</kw>
+<kw name="Passo 1 - Acessar a pagina de login" owner="EmailFormatoValido">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:40:19.783445" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-11-14T14:40:22.835197" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-14T14:40:19.783445" elapsed="5.881538"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-14T14:40:25.664983" elapsed="0.445681"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:40:26.110664" level="INFO">Opening url 'https://automacao.qacoders.dev.br/'</msg>
+<arg>url=${urlBase}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-11-14T14:40:26.110664" elapsed="0.868891"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:40:19.782447" elapsed="7.197108"/>
+</kw>
+<kw name="Passo 2 - Digitar um e-mail válido" owner="EmailFormatoValido">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${emailInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:40:26.981550" elapsed="0.432969"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:40:27.414519" level="INFO">Typing text 'sysadmin@qacoders.com' into text field 'id=email'.</msg>
+<arg>locator=${emailInput}</arg>
+<arg>text=${emailValido}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:40:27.414519" elapsed="0.401411"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:40:26.980554" elapsed="0.835376"/>
+</kw>
+<kw name="Passo 3 - Digitar uma senha valida" owner="EmailFormatoValido">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${senhaInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:40:27.815930" elapsed="0.156830"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:40:27.973759" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2024-11-14T14:40:28.200411" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>locator=${senhaInput}</arg>
+<arg>password=${senhaValida}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:40:27.973759" elapsed="0.514819"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:40:27.815930" elapsed="0.672648"/>
+</kw>
+<kw name="Passo 4 - clicar no botao entrar" owner="EmailFormatoValido">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${botaoInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:40:28.488578" elapsed="0.225995"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:40:28.714573" level="INFO">Clicking button 'id=login'.</msg>
+<arg>locator=${botaoInput}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:40:28.714573" elapsed="0.662806"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-14T14:40:34.377794" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-14T14:40:29.377379" elapsed="5.000415"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:40:28.488578" elapsed="5.889216"/>
+</kw>
+<kw name="Passo 5 - Acessar Tela de Cadastro de Usuários" owner="EmailFormatoValido">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CADASTROS_BUTTON}</arg>
+<arg>timeout= 60s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:40:34.393421" elapsed="0.698693"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:40:35.092114" level="INFO">Clicking element '//*[@id="Cadastros"]/span'.</msg>
+<arg>${CADASTROS_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:40:35.092114" elapsed="0.630176"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:40:35.722290" level="INFO">Clicking element '//*[@id="Usuários"]/span'.</msg>
+<arg>${USUARIOS_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:40:35.722290" elapsed="0.279449"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=edit</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:40:36.002737" elapsed="0.929425"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:40:36.932162" level="INFO">Clicking element 'id=edit'.</msg>
+<arg>id=edit</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:40:36.932162" elapsed="0.483999"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:40:34.393421" elapsed="3.022740"/>
+</kw>
+<kw name=" Passo 6 - Editar Nome e email valido" owner="EmailFormatoValido">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:40:37.494268" level="INFO">Typing text 'Nome Completo Cadastrado' into text field 'id=fullName'.</msg>
+<arg>${FULL_NAME_FIELD}</arg>
+<arg>${NEW_FULL_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:40:37.494268" elapsed="0.732408"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:40:38.227677" level="INFO">Typing text 'sysadmintestetdshvsvsdvsd@qacoders.com' into text field 'id=mail'.</msg>
+<arg>${EMAIL_FIELD}</arg>
+<arg>${NEW_EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:40:38.227677" elapsed="0.887214"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:40:37.494268" elapsed="1.620623"/>
+</kw>
+<kw name="Passo 7 - Clicar no Botão Salvar Alterações" owner="EmailFormatoValido">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:40:39.123499" level="INFO">Clicking button 'id=save'.</msg>
+<arg>${SAVE_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:40:39.122502" elapsed="0.399639"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:40:39.122502" elapsed="0.399639"/>
+</kw>
+<kw name="Fechar o navegador" owner="EmailFormatoValido" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-14T14:40:39.535357" elapsed="12.210188"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:40:39.535357" elapsed="12.210188"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:40:16.213375" elapsed="35.532170"/>
+</test>
+<status status="PASS" start="2024-11-14T14:40:16.191836" elapsed="35.553709"/>
+</suite>
+<status status="PASS" start="2024-11-14T14:38:29.414355" elapsed="142.331190"/>
+</suite>
+<suite id="s1-s1-s3" name="Login" source="C:\Users\Iza Wicki\OneDrive\Documentos\RobotTestesWeb\tests\login">
+<suite id="s1-s1-s3-s1" name="LoginCamposVazio" source="C:\Users\Iza Wicki\OneDrive\Documentos\RobotTestesWeb\tests\login\LoginCamposVazio.robot">
+<test id="s1-s1-s3-s1-t1" name="Cenario de teste: Login com os campos e-mail e senha vazios" line="11">
+<kw name="Abrir o navegador" owner="LoginCamposVazios" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:40:51.781680" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-11-14T14:40:53.179880" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-14T14:40:51.780685" elapsed="4.011970"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-14T14:40:55.792655" elapsed="0.224443"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:40:51.779686" elapsed="4.237412"/>
+</kw>
+<kw name="Abrir o navegador" owner="LoginCamposVazios">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:40:56.051776" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-11-14T14:40:58.392234" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-14T14:40:56.051776" elapsed="5.156951"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-14T14:41:01.209309" elapsed="0.126044"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:40:56.051776" elapsed="5.283577"/>
+</kw>
+<kw name="Passo 1 - Acessar a pagina de login" owner="LoginCamposVazios">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:41:01.335353" level="INFO">Opening url 'https://automacao.qacoders.dev.br/'</msg>
+<arg>url=${urlBase}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-11-14T14:41:01.335353" elapsed="0.774840"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:41:01.335353" elapsed="0.774840"/>
+</kw>
+<kw name="Passo 2 - Deixar o campo email vazio" owner="LoginCamposVazios">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${emailInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:41:02.116178" elapsed="0.399889"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:41:02.516067" level="INFO">Typing text '' into text field 'id=email'.</msg>
+<arg>locator=${emailInput}</arg>
+<arg>text=${emailVazio}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:41:02.516067" elapsed="0.195970"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:41:02.115179" elapsed="0.596858"/>
+</kw>
+<kw name="Passo 3 - Deixar o campo senha vazio" owner="LoginCamposVazios">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${senhaInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:41:02.727657" elapsed="0.031247"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:41:02.774521" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2024-11-14T14:41:03.035633" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>locator=${senhaInput}</arg>
+<arg>password=${senhaVazio}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:41:02.758904" elapsed="0.408231"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:41:02.727657" elapsed="0.439478"/>
+</kw>
+<kw name="Passo 4 - clicar no botao entrar" owner="LoginCamposVazios">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${botaoInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:41:03.175113" elapsed="0.045140"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:41:03.221250" level="INFO">Clicking button 'id=login'.</msg>
+<arg>locator=${botaoInput}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:41:03.220253" elapsed="0.333707"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-14T14:41:08.554091" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-14T14:41:03.553960" elapsed="5.000131"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:41:03.174115" elapsed="5.379976"/>
+</kw>
+<kw name="Passo 5 -verificar mensagem de erro" owner="LoginCamposVazios">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${mensagemError}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:41:08.600961" elapsed="0.453940"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-14T14:41:14.055284" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-14T14:41:09.054901" elapsed="5.000383"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:41:08.600961" elapsed="5.454323"/>
+</kw>
+<kw name="Fechar o navegador" owner="LoginCamposVazios" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-14T14:41:14.055284" elapsed="10.935501"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:41:14.055284" elapsed="10.935501"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:40:51.777689" elapsed="33.213096"/>
+</test>
+<status status="PASS" start="2024-11-14T14:40:51.758809" elapsed="33.231976"/>
+</suite>
+<suite id="s1-s1-s3-s2" name="LoginEmailInvalido" source="C:\Users\Iza Wicki\OneDrive\Documentos\RobotTestesWeb\tests\login\LoginEmailInvalido.robot">
+<test id="s1-s1-s3-s2-t1" name="Cenario de teste:Login com e-mail inválido e senha válida" line="9">
+<kw name="Abrir o navegador" owner="LoginEmailinvalido" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:41:25.012730" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-11-14T14:41:26.447369" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-14T14:41:25.011733" elapsed="3.829182"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-14T14:41:28.840915" elapsed="0.427548"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:41:25.011733" elapsed="4.256730"/>
+</kw>
+<kw name="Abrir o navegador" owner="LoginEmailinvalido">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:41:29.268463" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-11-14T14:41:31.870126" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-14T14:41:29.268463" elapsed="12.063652"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-14T14:41:41.332115" elapsed="0.280735"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:41:29.268463" elapsed="12.344387"/>
+</kw>
+<kw name="Passo 1 - Acessar a pagina de login" owner="LoginEmailinvalido">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:41:41.628472" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-11-14T14:41:43.979475" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-14T14:41:41.628472" elapsed="5.870898"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-14T14:41:47.499370" elapsed="0.921156"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:41:48.420526" level="INFO">Opening url 'https://automacao.qacoders.dev.br/'</msg>
+<arg>url=${urlBase}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-11-14T14:41:48.420526" elapsed="1.078981"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:41:41.628472" elapsed="7.871035"/>
+</kw>
+<kw name="Passo 2 - Digitar um e-mail inválido e verificar a mensagem de erro" owner="LoginEmailinvalido">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${emailInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:41:49.579506" elapsed="0.824364"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:41:50.403870" level="INFO">Typing text 'jjjj' into text field 'id=email'.</msg>
+<arg>locator=${emailInput}</arg>
+<arg>text=${emailInvalido}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:41:50.403870" elapsed="3.051670"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${mensagemErroLocator}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:41:53.455540" elapsed="0.151601"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:41:53.607141" level="INFO">Verifying element 'css=p.css-18xtib3' contains exact text 'Digite um email válido'.</msg>
+<arg>${mensagemErroLocator}</arg>
+<arg>${mensagemErro}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-11-14T14:41:53.607141" elapsed="0.292802"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-14T14:42:03.900275" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-14T14:41:53.899943" elapsed="10.000332"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:41:49.579506" elapsed="14.320769"/>
+</kw>
+<kw name="Passo 3 - Digitar uma senha válida" owner="LoginEmailinvalido">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${senhaInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:42:03.915901" elapsed="0.699026"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:42:04.614927" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2024-11-14T14:42:05.633142" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>locator=${senhaInput}</arg>
+<arg>password=${senhaValida}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:42:04.614927" elapsed="1.828746"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-14T14:42:11.443967" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-14T14:42:06.443673" elapsed="5.000294"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:42:03.915901" elapsed="7.528066"/>
+</kw>
+<kw name="Passo 4 - clicar no botao entrar" owner="LoginEmailinvalido">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${botaoInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:42:11.459596" elapsed="0.170651"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:42:11.630247" level="INFO">Clicking button 'id=login'.</msg>
+<arg>locator=${botaoInput}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:42:11.630247" elapsed="0.374139"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-14T14:42:17.005044" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-14T14:42:12.004386" elapsed="5.000658"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:42:11.459596" elapsed="5.545448"/>
+</kw>
+<kw name="Fechar o Navegador" owner="LoginEmailinvalido">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-14T14:42:17.005044" elapsed="2.649551"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:42:17.005044" elapsed="2.649551"/>
+</kw>
+<kw name="Fechar o Navegador" owner="LoginEmailinvalido" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-14T14:42:19.654595" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:42:19.654595" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:41:25.010053" elapsed="54.644542"/>
+</test>
+<status status="PASS" start="2024-11-14T14:41:24.990785" elapsed="54.663810"/>
+</suite>
+<suite id="s1-s1-s3-s3" name="Loginsenhaincorreta" source="C:\Users\Iza Wicki\OneDrive\Documentos\RobotTestesWeb\tests\login\Loginsenhaincorreta.robot">
+<test id="s1-s1-s3-s3-t1" name="Cenario de teste: Login com e-mail válido e senha inválida" line="9">
+<kw name="Abrir o navegador" owner="Loginsenhaincorreta" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:42:19.688467" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-11-14T14:42:21.318697" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-14T14:42:19.688467" elapsed="4.010660"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-14T14:42:23.699127" elapsed="0.365239"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:42:19.688467" elapsed="4.375899"/>
+</kw>
+<kw name="Abrir o navegador" owner="Loginsenhaincorreta">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:42:24.097635" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-11-14T14:42:26.370992" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-14T14:42:24.064366" elapsed="4.982150"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-14T14:42:29.047514" elapsed="0.389351"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:42:24.064366" elapsed="5.373497"/>
+</kw>
+<kw name="Passo 1 - Acessar a pagina de login" owner="Loginsenhaincorreta">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:42:29.439857" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-11-14T14:42:31.462986" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-14T14:42:29.438861" elapsed="6.288676"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-14T14:42:35.727537" elapsed="0.640850"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:42:36.369384" level="INFO">Opening url 'https://automacao.qacoders.dev.br/'</msg>
+<arg>url=${urlBase}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-11-14T14:42:36.369384" elapsed="1.694782"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:42:29.437863" elapsed="8.626303"/>
+</kw>
+<kw name="Passo 2 - Digitar um e-mail válido" owner="Loginsenhaincorreta">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${emailInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:42:38.106799" elapsed="1.545070"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:42:39.651869" level="INFO">Typing text 'sysadmin@qacoders.com' into text field 'id=email'.</msg>
+<arg>locator=${emailInput}</arg>
+<arg>text=${emailValido}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:42:39.651869" elapsed="2.521685"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:42:38.105801" elapsed="4.067753"/>
+</kw>
+<kw name="Passo 3 - digitar uma senha incorreta" owner="Loginsenhaincorreta">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${senhaInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:42:42.204796" elapsed="0.092832"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:42:42.297628" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2024-11-14T14:42:42.453841" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>locator=${senhaInput}</arg>
+<arg>password=${senhaIncorreta}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:42:42.297628" elapsed="0.665472"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:42:42.204796" elapsed="0.758304"/>
+</kw>
+<kw name="Passo 5 - clicar no botao entrar" owner="Loginsenhaincorreta">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${botaoInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:42:42.963100" elapsed="0.179217"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:42:43.142317" level="INFO">Clicking button 'id=login'.</msg>
+<arg>locator=${botaoInput}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:42:43.142317" elapsed="0.366408"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-14T14:42:48.514154" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-14T14:42:43.508725" elapsed="5.005429"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:42:42.963100" elapsed="5.551054"/>
+</kw>
+<kw name="Passo 6 -verificar se um simbolo ou mensagem de erro aparece" owner="Loginsenhaincorreta">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${simboloErro}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:42:48.545402" elapsed="0.586673"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-14T14:42:54.132334" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-14T14:42:49.132075" elapsed="5.000259"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:42:48.545402" elapsed="5.586932"/>
+</kw>
+<kw name="Fechar o navegador" owner="Loginsenhaincorreta">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-14T14:42:54.147962" elapsed="16.022357"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:42:54.147962" elapsed="16.022357"/>
+</kw>
+<kw name="Fechar o navegador" owner="Loginsenhaincorreta" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-14T14:43:10.170319" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:43:10.170319" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:42:19.687270" elapsed="50.483049"/>
+</test>
+<status status="PASS" start="2024-11-14T14:42:19.665201" elapsed="50.505118"/>
+</suite>
+<suite id="s1-s1-s3-s4" name="Tests" source="C:\Users\Iza Wicki\OneDrive\Documentos\RobotTestesWeb\tests\login\tests.robot">
+<test id="s1-s1-s3-s4-t1" name="Cenario de teste: login de usuario perfil de adm com sucesso" line="9">
+<kw name="Abrir o navegador" owner="tests" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:43:10.201490" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-11-14T14:43:11.770754" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-14T14:43:10.201490" elapsed="4.378933"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-14T14:43:14.580423" elapsed="0.710927"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:43:10.201490" elapsed="5.089860"/>
+</kw>
+<kw name="Passo 1 - Acessar a pagina de login" owner="tests">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:43:15.291350" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-11-14T14:43:18.234952" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-14T14:43:15.291350" elapsed="5.657807"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-14T14:43:20.949157" elapsed="0.422208"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:43:21.372364" level="INFO">Opening url 'https://automacao.qacoders.dev.br/'</msg>
+<arg>url=${urlBase}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-11-14T14:43:21.372364" elapsed="0.871811"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:43:15.291350" elapsed="6.952825"/>
+</kw>
+<kw name="Passo 2 - Digitar um e-mail válido" owner="tests">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${emailInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:43:22.245582" elapsed="0.464007"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:43:22.709589" level="INFO">Typing text 'sysadmin@qacoders.com' into text field 'id=email'.</msg>
+<arg>locator=${emailInput}</arg>
+<arg>text=${emailValido}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:43:22.709589" elapsed="0.538112"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:43:22.245582" elapsed="1.002119"/>
+</kw>
+<kw name="Passo 3 - digitar uma senha valida" owner="tests">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${senhaInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:43:23.263324" elapsed="0.048698"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:43:23.312022" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2024-11-14T14:43:23.534522" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>locator=${senhaInput}</arg>
+<arg>password=${senhaValida}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:43:23.312022" elapsed="0.650955"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:43:23.263324" elapsed="0.699653"/>
+</kw>
+<kw name="Passo 4 - clicar no botao entrar" owner="tests">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${botaoInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:43:23.962977" elapsed="0.179460"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:43:24.142437" level="INFO">Clicking button 'id=login'.</msg>
+<arg>locator=${botaoInput}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:43:24.142437" elapsed="0.619241"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-14T14:43:26.761809" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-14T14:43:24.761678" elapsed="2.000131"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:43:23.962977" elapsed="2.798832"/>
+</kw>
+<kw name="Passo 5 -verificar se realmente entrou no sistema" owner="tests">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>text=Logout</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-11-14T14:43:26.861091" elapsed="0.232728"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-14T14:43:32.094281" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-14T14:43:27.093819" elapsed="5.000462"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:43:26.845469" elapsed="5.248812"/>
+</kw>
+<kw name="Fechar o navegador" owner="tests">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-14T14:43:32.094281" elapsed="17.702274"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:43:32.094281" elapsed="17.702274"/>
+</kw>
+<kw name="Fechar o navegador" owner="tests" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-14T14:43:49.796555" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:43:49.796555" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:43:10.199419" elapsed="39.597136"/>
+</test>
+<status status="PASS" start="2024-11-14T14:43:10.170319" elapsed="39.626236"/>
+</suite>
+<status status="PASS" start="2024-11-14T14:40:51.745545" elapsed="178.059767"/>
+</suite>
+<suite id="s1-s1-s4" name="Nome Usuario" source="C:\Users\Iza Wicki\OneDrive\Documentos\RobotTestesWeb\tests\nome_usuario">
+<suite id="s1-s1-s4-s1" name="EditarNomeCaractersNumeros" source="C:\Users\Iza Wicki\OneDrive\Documentos\RobotTestesWeb\tests\nome_usuario\EditarNomeCaractersNumeros.robot">
+<test id="s1-s1-s4-s1-t1" name="Cenario de Testes: Editar Nome com caracteres invalidos Numeros (especiais)" line="9">
+<kw name="Abrir o navegador" owner="EditarNomeCaracteresNumeros" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:43:49.848512" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-11-14T14:43:51.390047" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-14T14:43:49.848512" elapsed="4.233303"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-14T14:43:54.082814" elapsed="0.170768"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:43:49.832581" elapsed="4.421998"/>
 </kw>
 <kw name="Abrir o navegador" owner="EditarNomeCaracteresNumeros">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-11-10T20:06:15.318942" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-11-14T14:43:54.266087" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-11-14T14:43:57.411826" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-11-10T20:06:15.317945" elapsed="11.833408"/>
+<status status="PASS" start="2024-11-14T14:43:54.265296" elapsed="6.145081"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-11-10T20:06:27.152352" elapsed="0.883117"/>
+<status status="PASS" start="2024-11-14T14:44:00.410377" elapsed="0.199506"/>
 </kw>
-<status status="PASS" start="2024-11-10T20:06:15.316947" elapsed="12.718522"/>
+<status status="PASS" start="2024-11-14T14:43:54.264294" elapsed="6.345589"/>
 </kw>
 <kw name="Passo 1 - Acessar a pagina de login" owner="EditarNomeCaracteresNumeros">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-11-10T20:06:28.059453" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-11-14T14:44:00.609883" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-11-14T14:44:06.614781" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-11-10T20:06:28.059453" elapsed="12.276991"/>
+<status status="PASS" start="2024-11-14T14:44:00.609883" elapsed="9.299607"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-11-10T20:06:40.336444" elapsed="0.809090"/>
+<status status="PASS" start="2024-11-14T14:44:09.909490" elapsed="0.498026"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-11-10T20:06:41.146533" level="INFO">Opening url 'https://automacao.qacoders.dev.br/login'</msg>
-<msg time="2024-11-10T20:06:42.221528" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=130.0.6723.117)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60CD8E1F5+2972373]
-	(No symbol) [0x00007FF60CA255F0]
-	(No symbol) [0x00007FF60C8C57FA]
-	(No symbol) [0x00007FF60C89FA85]
-	(No symbol) [0x00007FF60C942B17]
-	(No symbol) [0x00007FF60C95B1D1]
-	(No symbol) [0x00007FF60C93B823]
-	(No symbol) [0x00007FF60C9075E8]
-	(No symbol) [0x00007FF60C908751]
-	GetHandleVerifier [0x00007FF60CDB47BD+3129501]
-	GetHandleVerifier [0x00007FF60CE04D00+3458528]
-	GetHandleVerifier [0x00007FF60CDFB05D+3418429]
-	GetHandleVerifier [0x00007FF60CB8687B+844123]
-	(No symbol) [0x00007FF60CA30AFF]
-	(No symbol) [0x00007FF60CA2C6D4]
-	(No symbol) [0x00007FF60CA2C86D]
-	(No symbol) [0x00007FF60CA1BD79]
-	BaseThreadInitThunk [0x00007FFF97127374+20]
-	RtlUserThreadStart [0x00007FFF98D9CC91+33]
-</msg>
-<msg time="2024-11-10T20:06:42.469200" level="FAIL">WebDriverException: Message: target frame detached: received Inspector.detached event
-  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
-  (Session info: chrome=130.0.6723.117)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60CD8E1F5+2972373]
-	(No symbol) [0x00007FF60CA255F0]
-	(No symbol) [0x00007FF60C8C57FA]
-	(No symbol) [0x00007FF60C8B535E]
-	(No symbol) [0x00007FF60C8B4156]
-	(No symbol) [0x00007FF60C8B39BD]
-	(No symbol) [0x00007FF60C8B38DA]
-	(No symbol) [0x00007FF60C8B27C5]
-	(No symbol) [0x00007FF60C8D33CF]
-	(No symbol) [0x00007FF60C95BC15]
-	(No symbol) [0x00007FF60C93B823]
-	(No symbol) [0x00007FF60C9075E8]
-	(No symbol) [0x00007FF60C908751]
-	GetHandleVerifier [0x00007FF60CDB47BD+3129501]
-	GetHandleVerifier [0x00007FF60CE04D00+3458528]
-	GetHandleVerifier [0x00007FF60CDFB05D+3418429]
-	GetHandleVerifier [0x00007FF60CB8687B+844123]
-	(No symbol) [0x00007FF60CA30AFF]
-	(No symbol) [0x00007FF60CA2C6D4]
-	(No symbol) [0x00007FF60CA2C86D]
-	(No symbol) [0x00007FF60CA1BD79]
-	BaseThreadInitThunk [0x00007FFF97127374+20]
-	RtlUserThreadStart [0x00007FFF98D9CC91+33]
-</msg>
+<msg time="2024-11-14T14:44:10.407516" level="INFO">Opening url 'https://automacao.qacoders.dev.br/'</msg>
 <arg>url=${urlBase}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="FAIL" start="2024-11-10T20:06:41.145534" elapsed="1.336631">WebDriverException: Message: target frame detached: received Inspector.detached event
-  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
-  (Session info: chrome=130.0.6723.117)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60CD8E1F5+2972373]
-	(No symbol) [0x00007FF60CA255F0]
-	(No symbol) [0x00007FF60C8C57FA]
-	(No symbol) [0x00007FF60C8B535E]
-	(No symbol) [0x00007FF60C8B4156]
-	(No symbol) [0x00007FF60C8B39BD]
-	(No symbol) [0x00007FF60C8B38DA]
-	(No symbol) [0x00007FF60C8B27C5]
-	(No symbol) [0x00007FF60C8D33CF]
-	(No symbol) [0x00007FF60C95BC15]
-	(No symbol) [0x00007FF60C93B823]
-	(No symbol) [0x00007FF60C9075E8]
-	(No symbol) [0x00007FF60C908751]
-	GetHandleVerifier [0x00007FF60CDB47BD+3129501]
-	GetHandleVerifier [0x00007FF60CE04D00+3458528]
-	GetHandleVerifier [0x00007FF60CDFB05D+3418429]
-	GetHandleVerifier [0x00007FF60CB8687B+844123]
-	(No symbol) [0x00007FF60CA30AFF]
-	(No symbol) [0x00007FF60CA2C6D4]
-	(No symbol) [0x00007FF60CA2C86D]
-	(No symbol) [0x00007FF60CA1BD79]
-	BaseThreadInitThunk [0x00007FFF97127374+20]
-	RtlUserThreadStart [0x00007FFF98D9CC91+33]
-</status>
+<status status="PASS" start="2024-11-14T14:44:10.407516" elapsed="1.352319"/>
 </kw>
-<status status="FAIL" start="2024-11-10T20:06:28.058455" elapsed="14.424706">WebDriverException: Message: target frame detached: received Inspector.detached event
-  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
-  (Session info: chrome=130.0.6723.117)
-Stacktrace:
-	GetHandleVerifier [0x00007FF60CD8E1F5+2972373]
-	(No symbol) [0x00007FF60CA255F0]
-	(No symbol) [0x00007FF60C8C57FA]
-	(No symbol) [0x00007FF60C8B535E]
-	(No symbol) [0x00007FF60C8B4156]
-	(No symbol) [0x00007FF60C8B39BD]
-	(No symbol) [0x00007FF60C8B38DA]
-	(No symbol) [0x00007FF60C8B27C5]
-	(No symbol) [0x00007FF60C8D33CF]
-	(No symbol) [0x00007FF60C95BC15]
-	(No symbol) [0x00007FF60C93B823]
-	(No symbol) [0x00007FF60C9075E8]
-	(No symbol) [0x00007FF60C908751]
-	GetHandleVerifier [0x00007FF60CDB47BD+3129501]
-	GetHandleVerifier [0x00007FF60CE04D00+3458528]
-	GetHandleVerifier [0x00007FF60CDFB05D+3418429]
-	GetHandleVerifier [0x00007FF60CB8687B+844123]
-	(No symbol) [0x00007FF60CA30AFF]
-	(No symbol) [0x00007FF60CA2C6D4]
-	(No symbol) [0x00007FF60CA2C86D]
-	(No symbol) [0x00007FF60CA1BD79]
-	BaseThreadInitThunk [0x00007FFF97127374+20]
-	RtlUserThreadStart [0x00007FFF98D9CC91+33]
-</status>
+<status status="PASS" start="2024-11-14T14:44:00.609883" elapsed="11.149952"/>
 </kw>
 <kw name="Passo 2 - Digitar um e-mail válido" owner="EditarNomeCaracteresNumeros">
-<status status="NOT RUN" start="2024-11-10T20:06:42.550981" elapsed="0.000000"/>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${emailInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:44:11.776663" elapsed="0.412916"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:44:12.189579" level="INFO">Typing text 'sysadmin@qacoders.com' into text field 'id=email'.</msg>
+<arg>locator=${emailInput}</arg>
+<arg>text=${emailValido}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:44:12.189579" elapsed="0.749977"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:44:11.776663" elapsed="1.162893"/>
 </kw>
 <kw name="Passo 3 - Digitar uma senha valida" owner="EditarNomeCaracteresNumeros">
-<status status="NOT RUN" start="2024-11-10T20:06:42.585888" elapsed="0.000000"/>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${senhaInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:44:12.939556" elapsed="0.103892"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:44:13.043448" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2024-11-14T14:44:13.235420" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>locator=${senhaInput}</arg>
+<arg>password=${senhaValida}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:44:13.043448" elapsed="0.515919"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:44:12.939556" elapsed="0.619811"/>
 </kw>
 <kw name="Passo 4 - clicar no botao entrar" owner="EditarNomeCaracteresNumeros">
-<status status="NOT RUN" start="2024-11-10T20:06:42.616806" elapsed="0.000000"/>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${botaoInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:44:13.575080" elapsed="0.118342"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:44:13.693422" level="INFO">Clicking button 'id=login'.</msg>
+<arg>locator=${botaoInput}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:44:13.693422" elapsed="0.247750"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-14T14:44:18.941565" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-14T14:44:13.941172" elapsed="5.000393"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:44:13.559367" elapsed="5.382198"/>
 </kw>
 <kw name="Passo 5 - Acessar Tela de Cadastro de Usuários" owner="EditarNomeCaracteresNumeros">
-<status status="NOT RUN" start="2024-11-10T20:06:42.885677" elapsed="0.000000"/>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CADASTROS_BUTTON}</arg>
+<arg>timeout= 60</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:44:18.957193" elapsed="0.620604"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:44:19.577797" level="INFO">Clicking element '//*[@id="Cadastros"]/span'.</msg>
+<arg>${CADASTROS_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:44:19.577797" elapsed="1.699137"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:44:21.276934" level="INFO">Clicking element '//*[@id="Usuários"]/span'.</msg>
+<arg>${USUARIOS_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:44:21.276934" elapsed="1.214687"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=edit</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:44:22.492621" elapsed="0.882426"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:44:23.375047" level="INFO">Clicking element 'id=edit'.</msg>
+<arg>id=edit</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:44:23.375047" elapsed="0.396289"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:44:18.957193" elapsed="4.814143"/>
+</kw>
+<kw name="Passo 6 - Editar Nome com caracteres invalidos Numeros (especiais)" owner="EditarNomeCaracteresNumeros">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:44:23.771336" level="INFO">Typing text 'THES Teste123' into text field 'id=fullName'.</msg>
+<arg>${FULL_NAME_FIELD}</arg>
+<arg>${NOME_CARACTERES_NUMEROS}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:44:23.771336" elapsed="0.974262"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:44:24.745598" level="INFO">Typing text 'sysadmintestetdshvsvsd' into text field 'id=mail'.</msg>
+<arg>${EMAIL_FIELD}</arg>
+<arg>${NEW_EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:44:24.745598" elapsed="0.532989"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:44:23.771336" elapsed="1.507251"/>
 </kw>
 <kw name="Passo 7 - Clicar no Botão Salvar Alterações" owner="EditarNomeCaracteresNumeros">
-<status status="NOT RUN" start="2024-11-10T20:06:43.017666" elapsed="0.000000"/>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:44:25.342417" level="INFO">Clicking button 'id=save'.</msg>
+<arg>${SAVE_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:44:25.342417" elapsed="0.965926"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:44:25.342417" elapsed="0.965926"/>
 </kw>
 <kw name="Fechar o navegador" owner="EditarNomeCaracteresNumeros" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-11-10T20:06:43.128659" elapsed="34.204420"/>
+<status status="PASS" start="2024-11-14T14:44:26.308343" elapsed="16.763560"/>
 </kw>
-<status status="PASS" start="2024-11-10T20:06:43.127661" elapsed="34.205418"/>
+<status status="PASS" start="2024-11-14T14:44:26.308343" elapsed="16.763560"/>
 </kw>
-<status status="FAIL" start="2024-11-10T20:06:04.872114" elapsed="72.495872">
+<status status="PASS" start="2024-11-14T14:43:49.832581" elapsed="53.239322"/>
+</test>
+<status status="PASS" start="2024-11-14T14:43:49.814864" elapsed="53.257039"/>
+</suite>
+<suite id="s1-s1-s4-s2" name="EditarNomeUmaPalavra" source="C:\Users\Iza Wicki\OneDrive\Documentos\RobotTestesWeb\tests\nome_usuario\EditarNomeUmaPalavra.robot">
+<test id="s1-s1-s4-s2-t1" name="Cenario de Testes: Editar Campo Nome com 01 palavra" line="9">
+<kw name="Abrir o navegador" owner="EditarNomeUmaPalavra" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:44:43.092171" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-11-14T14:44:44.958994" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-14T14:44:43.092171" elapsed="4.983555"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-14T14:44:48.075726" elapsed="0.177256"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:44:43.092171" elapsed="5.160811"/>
+</kw>
+<kw name="Abrir o navegador" owner="EditarNomeUmaPalavra">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:44:48.255975" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-11-14T14:44:50.973241" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-14T14:44:48.254977" elapsed="5.443154"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-14T14:44:53.698131" elapsed="0.117691"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:44:48.254977" elapsed="5.560845"/>
+</kw>
+<kw name="Passo 1 - Acessar a pagina de login" owner="EditarNomeUmaPalavra">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:44:53.824194" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-11-14T14:44:57.150125" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-14T14:44:53.823202" elapsed="8.316264"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-14T14:45:02.140255" elapsed="0.826290"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:45:02.966545" level="INFO">Opening url 'https://automacao.qacoders.dev.br/'</msg>
+<arg>url=${urlBase}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-11-14T14:45:02.966545" elapsed="1.007426"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:44:53.821803" elapsed="10.152168"/>
+</kw>
+<kw name="Passo 2 - Digitar um e-mail válido" owner="EditarNomeUmaPalavra">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${emailInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:45:04.023973" elapsed="0.964511"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:45:04.988484" level="INFO">Typing text 'sysadmin@qacoders.com' into text field 'id=email'.</msg>
+<arg>locator=${emailInput}</arg>
+<arg>text=${emailValido}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:45:04.988484" elapsed="0.791824"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:45:04.023973" elapsed="1.756335"/>
+</kw>
+<kw name="Passo 3 - Digitar uma senha valida" owner="EditarNomeUmaPalavra">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${senhaInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:45:05.842552" elapsed="0.177552"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:45:06.020104" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2024-11-14T14:45:06.404540" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>locator=${senhaInput}</arg>
+<arg>password=${senhaValida}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:45:06.020104" elapsed="0.538934"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:45:05.841554" elapsed="0.717484"/>
+</kw>
+<kw name="Passo 4 - clicar no botao entrar" owner="EditarNomeUmaPalavra">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${botaoInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:45:06.559038" elapsed="0.148356"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:45:06.707394" level="INFO">Clicking button 'id=login'.</msg>
+<arg>locator=${botaoInput}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:45:06.707394" elapsed="0.387880"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-14T14:45:12.095466" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-14T14:45:07.095274" elapsed="5.000192"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:45:06.559038" elapsed="5.536428"/>
+</kw>
+<kw name="Passo 5 - Acessar Tela de Cadastro de Usuários" owner="EditarNomeUmaPalavra">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CADASTROS_BUTTON}</arg>
+<arg>timeout= 60s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:45:12.111095" elapsed="0.770645"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:45:12.881740" level="INFO">Clicking element '//*[@id="Cadastros"]/span'.</msg>
+<arg>${CADASTROS_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:45:12.881740" elapsed="2.125704"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:45:15.007444" level="INFO">Clicking element '//*[@id="Usuários"]/span'.</msg>
+<arg>${USUARIOS_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:45:15.007444" elapsed="1.564641"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=edit</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:45:16.572085" elapsed="0.610552"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:45:17.182637" level="INFO">Clicking element 'id=edit'.</msg>
+<arg>id=edit</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:45:17.182637" elapsed="1.172491"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:45:12.111095" elapsed="6.244033"/>
+</kw>
+<kw name="Passo 6 - Editar Nome com apenas uma palavra" owner="EditarNomeUmaPalavra">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:45:18.445558" level="INFO">Typing text 'MARIA' into text field 'id=fullName'.</msg>
+<arg>${FULL_NAME_FIELD}</arg>
+<arg>${NOME_UNICO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:45:18.444563" elapsed="0.997907"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:45:19.456120" level="INFO">Typing text 'sysadmintestetdshvsvsdvsd@qacoders.com' into text field 'id=mail'.</msg>
+<arg>${EMAIL_FIELD}</arg>
+<arg>${NEW_EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:45:19.455303" elapsed="1.368921"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:45:18.443559" elapsed="2.380665"/>
+</kw>
+<kw name="Passo 7 - Clicar no Botão Salvar Alterações" owner="EditarNomeUmaPalavra">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:45:20.832202" level="INFO">Clicking button 'id=save'.</msg>
+<arg>${SAVE_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:45:20.831204" elapsed="0.697323"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-14T14:45:26.528689" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-14T14:45:21.528527" elapsed="5.000162"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:45:20.831204" elapsed="5.697485"/>
+</kw>
+<kw name="Fechar o navegador" owner="EditarNomeUmaPalavra" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-14T14:45:26.559937" elapsed="8.414295"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:45:26.559937" elapsed="8.414295"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:44:43.092171" elapsed="51.882061"/>
+</test>
+<status status="PASS" start="2024-11-14T14:44:43.071903" elapsed="51.902329"/>
+</suite>
+<suite id="s1-s1-s4-s3" name="EditarNomeVazio" source="C:\Users\Iza Wicki\OneDrive\Documentos\RobotTestesWeb\tests\nome_usuario\EditarNomeVazio.robot">
+<test id="s1-s1-s4-s3-t1" name="Cenario de Testes: Editar Campo Nome Completo Vazio" line="8">
+<kw name="Passo 1 - Acessar a pagina de login" owner="EditarNomeVazio">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:45:35.001094" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-11-14T14:45:37.716734" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-11-14T14:45:35.000090" elapsed="6.552044"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-11-14T14:45:41.553130" elapsed="0.530841"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:45:42.083971" level="INFO">Opening url 'https://automacao.qacoders.dev.br/'</msg>
+<arg>url=${urlBase}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-11-14T14:45:42.083971" elapsed="1.492302"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:45:34.999756" elapsed="8.576517"/>
+</kw>
+<kw name="Passo 2 - Digitar um e-mail válido" owner="EditarNomeVazio">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${emailInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:45:43.584251" elapsed="0.436509"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:45:44.024285" level="INFO">Typing text 'sysadmin@qacoders.com' into text field 'id=email'.</msg>
+<arg>locator=${emailInput}</arg>
+<arg>text=${emailValido}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:45:44.024285" elapsed="0.724171"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:45:43.583254" elapsed="1.171372"/>
+</kw>
+<kw name="Passo 3 - Digitar uma senha valida" owner="EditarNomeVazio">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${senhaInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:45:44.756621" elapsed="0.110470"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:45:44.868088" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2024-11-14T14:45:45.084149" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>locator=${senhaInput}</arg>
+<arg>password=${senhaValida}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:45:44.867091" elapsed="0.577523"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:45:44.755624" elapsed="0.688990"/>
+</kw>
+<kw name="Passo 4 - clicar no botao entrar" owner="EditarNomeVazio">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${botaoInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:45:45.444614" elapsed="0.105222"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:45:45.550833" level="INFO">Clicking button 'id=login'.</msg>
+<arg>locator=${botaoInput}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:45:45.549836" elapsed="0.217601"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-14T14:45:50.767721" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-14T14:45:45.767437" elapsed="5.000284"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:45:45.444614" elapsed="5.323107"/>
+</kw>
+<kw name="Passo 5 - Acessar Tela de Cadastro de Usuários" owner="EditarNomeVazio">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CADASTROS_BUTTON}</arg>
+<arg>timeout= 60s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:45:50.767721" elapsed="0.581229"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:45:51.348950" level="INFO">Clicking element '//*[@id="Cadastros"]/span'.</msg>
+<arg>${CADASTROS_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:45:51.348950" elapsed="1.538943"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:45:52.887893" level="INFO">Clicking element '//*[@id="Usuários"]/span'.</msg>
+<arg>${USUARIOS_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:45:52.887893" elapsed="2.022745"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=edit</arg>
+<arg>timeout=30</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-11-14T14:45:54.911635" elapsed="0.399398"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:45:55.312030" level="INFO">Clicking element 'id=edit'.</msg>
+<arg>id=edit</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:45:55.311033" elapsed="0.390459"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:45:50.767721" elapsed="4.933771"/>
+</kw>
+<kw name="Passo 6 - Editar Nome e Email" owner="EditarNomeVazio">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:45:55.781119" level="INFO">Typing text '' into text field 'id=fullName'.</msg>
+<arg>${FULL_NAME_FIELD}</arg>
+<arg>${EMPTY}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:45:55.781119" elapsed="0.473174"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:45:56.254293" level="INFO">Typing text 'sysadmintestetdshvsvsd' into text field 'id=mail'.</msg>
+<arg>${EMAIL_FIELD}</arg>
+<arg>${NEW_EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:45:56.254293" elapsed="0.539522"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:45:55.781119" elapsed="1.012696"/>
+</kw>
+<kw name="Passo 7 - Clicar no Botão Salvar Alterações" owner="EditarNomeVazio">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-11-14T14:45:56.793815" level="INFO">Clicking button 'id=save'.</msg>
+<arg>${SAVE_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-14T14:45:56.793815" elapsed="0.177243"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-11-14T14:46:01.971447" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-11-14T14:45:56.971058" elapsed="5.000389"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:45:56.793815" elapsed="5.177632"/>
+</kw>
+<status status="PASS" start="2024-11-14T14:45:34.997763" elapsed="26.973684"/>
+</test>
+<status status="PASS" start="2024-11-14T14:45:34.974232" elapsed="26.997215"/>
+</suite>
+<status status="PASS" start="2024-11-14T14:43:49.807628" elapsed="132.180629"/>
+</suite>
+<status status="PASS" start="2024-11-14T14:37:19.510518" elapsed="522.484622"/>
+</suite>
+<status status="PASS" start="2024-11-14T14:37:19.451746" elapsed="522.569346"/>
+</suite>
+<statistics>
+<total>
+<stat pass="13" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="13" fail="0" skip="0" id="s1" name="RobotTestesWeb">RobotTestesWeb</stat>
+<stat pass="13" fail="0" skip="0" id="s1-s1" name="Tests">RobotTestesWeb.Tests</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1-s1" name="Cadastro Usuario">RobotTestesWeb.Tests.Cadastro Usuario</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="DeixarCamposVaziosCancelar">RobotTestesWeb.Tests.Cadastro Usuario.DeixarCamposVaziosCancelar</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s2" name="EditarCadastroUser copy">RobotTestesWeb.Tests.Cadastro Usuario.EditarCadastroUser copy</stat>
+<stat pass="4" fail="0" skip="0" id="s1-s1-s2" name="Email">RobotTestesWeb.Tests.Email</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s2-s1" name="EmailComEspaços">RobotTestesWeb.Tests.Email.EmailComEspaços</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s2-s2" name="EmailFomatoValidoBR">RobotTestesWeb.Tests.Email.EmailFomatoValidoBR</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s2-s3" name="EmailFormatoInvalido">RobotTestesWeb.Tests.Email.EmailFormatoInvalido</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s2-s4" name="EmailFormatoValido">RobotTestesWeb.Tests.Email.EmailFormatoValido</stat>
+<stat pass="4" fail="0" skip="0" id="s1-s1-s3" name="Login">RobotTestesWeb.Tests.Login</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s3-s1" name="LoginCamposVazio">RobotTestesWeb.Tests.Login.LoginCamposVazio</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s3-s2" name="LoginEmailInvalido">RobotTestesWeb.Tests.Login.LoginEmailInvalido</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s3-s3" name="Loginsenhaincorreta">RobotTestesWeb.Tests.Login.Loginsenhaincorreta</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s3-s4" name="Tests">RobotTestesWeb.Tests.Login.Tests</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1-s4" name="Nome Usuario">RobotTestesWeb.Tests.Nome Usuario</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s4-s1" name="EditarNomeCaractersNumeros">RobotTestesWeb.Tests.Nome Usuario.EditarNomeCaractersNumeros</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s4-s2" name="EditarNomeUmaPalavra">RobotTestesWeb.Tests.Nome Usuario.EditarNomeUmaPalavra</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s4-s3" name="EditarNomeVazio">RobotTestesWeb.Tests.Nome Usuario.EditarNomeVazio</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-11-14T14:37:21.956695" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-11-14T14:37:26.872656" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-11-14T14:37:56.543290" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-11-14T14:38:01.643607" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-11-14T14:38:30.691694" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-11-14T14:38:36.161643" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-11-14T14:39:08.673486" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-11-14T14:39:13.267381" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-11-14T14:39:42.805020" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-11-14T14:39:47.511197" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-11-14T14:40:17.336776" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-11-14T14:40:22.835197" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-11-14T14:40:53.179880" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-11-14T14:40:58.392234" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-11-14T14:41:26.447369" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-11-14T14:41:31.870126" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-11-14T14:41:43.979475" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-11-14T14:42:21.318697" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-11-14T14:42:26.370992" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-11-14T14:42:31.462986" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-11-14T14:43:11.770754" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-11-14T14:43:18.234952" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-11-14T14:43:51.390047" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-11-14T14:43:57.411826" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-11-14T14:44:06.614781" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-11-14T14:44:44.958994" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-11-14T14:44:50.973241" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-11-14T14:44:57.150125" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-11-14T14:45:37.716734" level="WARN">The chromedriver version (130.0.6723.58) detected in PATH at C:\Users\Iza Wicki\AppData\Local\Programs\Python\Python312\Scripts\chromedriver.exe might not be compatible with the detected chrome version (131.0.6778.69); currently, chromedriver 131.0.6778.69 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>
