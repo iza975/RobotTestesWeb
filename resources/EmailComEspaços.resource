@@ -49,7 +49,7 @@ Passo 4 - clicar no botao entrar
     Click Button                     locator=${botaoInput}    
     Sleep    5
 Passo 5 - Acessar Tela de Cadastro de Usuários
-    Wait Until Element Is Visible    ${CADASTROS_BUTTON}    timeout= 5
+    Wait Until Element Is Visible    ${CADASTROS_BUTTON}    timeout=60s
     Click Element    ${CADASTROS_BUTTON}
     Click Element    ${USUARIOS_BUTTON}
     Wait Until Element Is Visible    id=edit    timeout=30
