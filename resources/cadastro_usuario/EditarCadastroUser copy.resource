@@ -1,9 +1,8 @@
 **** Settings ***
-Library    SeleniumLibrary
+Library    SeleniumLibrary  
 Library    String
-                             # Editar Todos os campos da tela e clicar em salvar
 
-*** Variables ***
+*** Variables ***                           
 ${CADASTROS_BUTTON}         //*[@id="Cadastros"]/span     # Botao de cadastroda interface  CADASTRO
 ${USUARIOS_BUTTON}         //*[@id="Usuários"]/span        # botao de usuarios interface CADASTRO
 ${EDITAR_CADASTRO_BUTTON}   id=edit                          # botao cadastro interface CADASTRO

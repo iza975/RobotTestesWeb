@@ -1,5 +1,6 @@
 *** Settings ***
-Library     SeleniumLibrary  
+
+Library    SeleniumLibrary    
 Library     String
 
 *** Variables ***
@@ -14,6 +15,7 @@ ${simboloErro}      css=div.css-164cp4c
 ${senhaVazio}       
 ${emailVazio}       
 ${mensagemError}  class=css-18xtib3
+
 *** Keywords ***   # palavras chaves
 Abrir o navegador
     Open Browser    browser=chrome 

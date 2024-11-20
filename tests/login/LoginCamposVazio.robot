@@ -15,7 +15,7 @@ Cenario de teste: Login com os campos e-mail e senha vazios
     Passo 3 - Deixar o campo senha vazio
     Passo 4 - clicar no botao entrar 
     Passo 5 - verificar mensagem de erro   
-    
+    Fechar o navegador
 
     
      

@@ -1,6 +1,8 @@
+
 *** Settings ***
-Library     SeleniumLibrary  
-Library     String
+
+Library     SeleniumLibrary
+Library     String 
 
 *** Variables ***
 ${urlBase}         https://automacao.qacoders.dev.br/
@@ -9,6 +11,7 @@ ${emailValido}     sysadmin@qacoders.com
 ${senhaInput}      id=password
 ${senhaValida}     1234@Test
 ${botaoInput}      id=login
+
 *** Keywords ***   # palavras chaves
 Abrir o navegador
     Open Browser    browser=chrome 
@@ -33,5 +36,4 @@ Passo 4 - clicar no botao entrar
     Sleep    2
 Passo 5 -verificar se realmente entrou no sistema
     Wait Until Page Contains    text=Logout
-    Sleep    5
-
+    Sleep    5  
